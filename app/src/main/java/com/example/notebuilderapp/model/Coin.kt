@@ -1,9 +1,13 @@
 package com.example.notebuilderapp.model
 
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity
 data class Coin(
+    @PrimaryKey
     @SerializedName("id")
     val id: String,
     @SerializedName("is_active")
